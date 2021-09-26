@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29020.237
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbpDocker.Domain", "src\AbpDocker.Domain\AbpDocker.Domain.csproj", "{554AD327-6DBA-4F8F-96F8-81CE7A0C863F}"
 EndProject
@@ -38,6 +38,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbpDocker.HttpApi.Client.ConsoleTestApp", "test\AbpDocker.HttpApi.Client.ConsoleTestApp\AbpDocker.HttpApi.Client.ConsoleTestApp.csproj", "{EF480016-9127-4916-8735-D2466BDBC582}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbpDocker.DbMigrator", "src\AbpDocker.DbMigrator\AbpDocker.DbMigrator.csproj", "{AA94D832-1CCC-4715-95A9-A483F23A1A5D}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9E544EA5-FEE7-49FA-8DF2-514E61EC8D95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -109,6 +111,10 @@ Global
 		{AA94D832-1CCC-4715-95A9-A483F23A1A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA94D832-1CCC-4715-95A9-A483F23A1A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA94D832-1CCC-4715-95A9-A483F23A1A5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E544EA5-FEE7-49FA-8DF2-514E61EC8D95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E544EA5-FEE7-49FA-8DF2-514E61EC8D95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E544EA5-FEE7-49FA-8DF2-514E61EC8D95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E544EA5-FEE7-49FA-8DF2-514E61EC8D95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

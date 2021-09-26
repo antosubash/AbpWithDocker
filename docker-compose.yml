@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  web:
+    image: abpdockerweb
+    ports:
+        - 9005:80     
+    build:
+      context: .
+      dockerfile: src/AbpDocker.Web/Dockerfile
+
+  identityserver:
+    image: abpdockeridentityserver
+    ports:
+        - 9006:80   
+    build:
+      context: .
+      dockerfile: src/AbpDocker.IdentityServer/Dockerfile
+
+  httpapi:
+    image: abpdockerhttpapihost
+    ports:
+        - 9007:80   
+    build:
+      context: .
+      dockerfile: src/AbpDocker.HttpApi.Host/Dockerfile
+

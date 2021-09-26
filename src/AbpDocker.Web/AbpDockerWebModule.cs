@@ -40,6 +40,7 @@ using Volo.Abp.UI.Navigation.Urls;
 using Volo.Abp.UI;
 using Volo.Abp.UI.Navigation;
 using Volo.Abp.VirtualFileSystem;
+using AbpDocker.Extension;
 
 namespace AbpDocker.Web
 {
@@ -88,6 +89,7 @@ namespace AbpDocker.Web
             ConfigureNavigationServices(configuration);
             ConfigureMultiTenancy();
             ConfigureSwaggerServices(context.Services);
+            context.Services.AddSameSiteCookiePolicy();
         }
 
         private void ConfigureBundles()
@@ -234,7 +236,7 @@ namespace AbpDocker.Web
             {
                 app.UseErrorPage();
             }
-
+            app.UseCookiePolicy();
             app.UseCorrelationId();
             app.UseStaticFiles();
             app.UseRouting();

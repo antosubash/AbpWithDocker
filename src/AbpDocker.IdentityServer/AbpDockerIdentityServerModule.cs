@@ -31,6 +31,7 @@ using Volo.Abp.Modularity;
 using Volo.Abp.UI.Navigation.Urls;
 using Volo.Abp.UI;
 using Volo.Abp.VirtualFileSystem;
+using AbpDocker.Extension;
 
 namespace AbpDocker
 {
@@ -148,6 +149,7 @@ namespace AbpDocker
                         .AllowCredentials();
                 });
             });
+            context.Services.AddSameSiteCookiePolicy();
         }
 
         public override void OnApplicationInitialization(ApplicationInitializationContext context)
@@ -166,7 +168,7 @@ namespace AbpDocker
             {
                 app.UseErrorPage();
             }
-
+            app.UseCookiePolicy();
             app.UseCorrelationId();
             app.UseStaticFiles();
             app.UseRouting();
